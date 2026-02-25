@@ -14,6 +14,7 @@ A skeleton capsule with an example of a `pydantic-settings` class for parsing ar
 - app panels can also be created automatically from `argparse.ArgumnetParser` classes, **provided that they are defined at the top level of a .py file** (i.e. not inside a function)
 - if an `app-panel.json` already exists, only new fields will be added to it: the alternative is to write a completely new file with `--strategy overwrite`
 - any time an existing `app-panel.json` is modified, a timestamped backup of the existing version is created in `.codeocean/` (which should not interfere with the behavior of the capsule)
+- source code: [https://github.com/AllenNeuralDynamics/auto-app-panel](https://github.com/AllenNeuralDynamics/auto-app-panel)
 
 ```
  Usage: auto-app-panel [OPTIONS] SOURCE [OUTPUT]
