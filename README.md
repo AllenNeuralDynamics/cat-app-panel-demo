@@ -4,9 +4,9 @@ A skeleton capsule with an example of a `pydantic-settings` class for parsing ar
 
 ## Create an app panel from the arg parser
 - enter a terminal cloud workstation and run the following:
-```
-pip install auto-app-panel && auto-app-panel code/run_capsule.pydantic
-```
+    ```
+    pip install auto-app-panel && auto-app-panel code/run_capsule.pydantic
+    ```
 - an `app-panel.json` will be created in the `.codeocean/` folder
 - exit the cloud workstation and check the `App Builder` tab
 
@@ -16,7 +16,6 @@ pip install auto-app-panel && auto-app-panel code/run_capsule.pydantic
 - any time an existing `app-panel.json` is modified, a timestamped backup of the existing version is created in `.codeocean/` (which should not interfere with the behavior of the capsule)
 
 ```
-
  Usage: auto-app-panel [OPTIONS] SOURCE [OUTPUT]
 
 ╭─ Arguments ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
