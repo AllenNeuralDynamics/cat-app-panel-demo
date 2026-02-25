@@ -12,8 +12,8 @@ class Params(BaseSettings):
     # arguments with no default - just define the name and type:
     # session_id: str
 
-    skip_existing: bool = Field(default=True, exclude=True)
-    test: bool = Field(default=False, exclude=True)
+    skip_existing: bool = Field(default=True, exclude=True, description="Skip sessions that already have data")
+    test: bool = Field(default=False, exclude=True, description="Run a quick test with a single session")
     logging_level: str | int = Field(default='INFO', exclude=True)
     use_process_pool: bool = Field(default=True, exclude=True)
     max_workers: int | None = Field(default=int(os.environ['CO_CPUS']), exclude=True)
