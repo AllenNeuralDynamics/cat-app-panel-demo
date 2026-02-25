@@ -8,6 +8,10 @@ from pydantic_settings import BaseSettings, CliSettingsSource
 from pydantic_settings.sources import JsonConfigSettingsSource
 
 class Params(BaseSettings):
+    # all fields below have default arguments, but it's also possible to add required 
+    # arguments with no default - just define the name and type:
+    # session_id: str
+
     skip_existing: bool = Field(default=True, exclude=True)
     test: bool = Field(default=False, exclude=True)
     logging_level: str | int = Field(default='INFO', exclude=True)
