@@ -1,0 +1,29 @@
+{
+	"version": 1,
+	"base_image": "codeocean/mambaforge3:23.1.0-4-python3.10.12-ubuntu22.04",
+	"options": {
+		"registry_host_arg": true,
+		"git_ask_pass": true,
+		"mount_secrets": true
+	},
+	"installers": {
+		"pip3": {
+			"packages": [
+				{
+					"name": "eval-type-backport",
+					"version": "0.3.1"
+				},
+				{
+					"name": "pydantic",
+					"version": "2.12.5"
+				},
+				{
+					"name": "pydantic-settings",
+					"version": "2.11.0"
+				}
+			],
+			"options": {},
+			"pre_install_options": {}
+		}
+	}
+}
